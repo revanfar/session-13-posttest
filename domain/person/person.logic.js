@@ -1,11 +1,11 @@
 class Person {
-    constructor(name, nik, bod) {
+    constructor(name, nik, dob) {
       this.name = name
       this.nik = nik
-      this.birthOfDate = bod
+      this.dateOfBirth = dob
     }
     getWeekType() {
-      var day = new Date(this.birthOfDate).getDay()
+      var day = new Date(this.dateOfBirth).getDay()
       if (day > 0 && day < 6) {
         return "Weekday" 
       } else if(day === 0 || day === 6) {
@@ -15,9 +15,9 @@ class Person {
       }
     }
     getAge() {
-      var birthOfDate = Date.parse(this.birthOfDate)
+      var dateOfBirth = Date.parse(this.dateOfBirth)
       var now = Date.now()
-      var diff = now - birthOfDate
+      var diff = now - dateOfBirth
       var diffDate = new Date(diff)
       return Math.abs(diffDate.getUTCFullYear() - 1970)
     }
@@ -26,8 +26,8 @@ class Person {
       return this.nik
     }
 
-    getBod() {
-      return this.birthOfDate
+    getDob() {
+      return this.dateOfBirth
     }
   }
   
