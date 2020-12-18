@@ -1,0 +1,15 @@
+{
+  "name": "session-13-posttest",
+  "version": "1.0.0",
+  "description": "```bash $ npm install  $ node index.js ``` ## A glimpse of my running code ![Screenshot](result.png)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.com:telkomsel-softdev/revan-faredha/session-13-ddd-repl.git"
+  },
+  "author": "Revanfar",
+  "license": "ISC"
+}
